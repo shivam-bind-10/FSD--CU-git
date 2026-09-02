@@ -3,7 +3,7 @@ const express = require("express")
 const app = express()
 
 app.get("/",(req,res)=>{
-    fs.readFile("manu.txt","utf-8",(err,data)=>{
+    fs.readFile("shivam.txt","utf-8",(err,data)=>{
         res.send(data)
         if(err){
             res.json({
