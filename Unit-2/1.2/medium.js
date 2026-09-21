@@ -2,7 +2,8 @@ const express = require("express")
 const app = express()
 
 const middleware = (req,res,next)=>{
-    res.send("hello-middleware")
+    // res.send("hello-middleware")
+    console.log("middleware")
     next()
 }
 
