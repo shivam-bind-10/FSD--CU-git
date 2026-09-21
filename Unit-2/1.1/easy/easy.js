@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
 
   if (req.url === "/") {
     res.writeHead(200, { "Content-Type": "text/plain" });
-    res.end("Hello World from Shivam Bind");
+    res.end("Hello World");
   } else if (req.url === "/file") {
     fs.readFile(filePath, "utf8", (err, data) => {
       if (err) {
@@ -36,4 +36,3 @@ server.listen(PORT, () => {
   console.log(`Visit http://localhost:${PORT}/ for 'Hello World'`);
   console.log(`Visit http://localhost:${PORT}/file to view file content`);
 });
-
