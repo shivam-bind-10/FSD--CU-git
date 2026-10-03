@@ -2,8 +2,8 @@ const express = require("express")
 const app = express()
 
 const middleware = (req,res,next)=>{
-    // res.send("hello-middleware")
-    console.log("middleware")
+   
+    console.log("middleware executed")
     next()
 }
 
@@ -11,9 +11,9 @@ app.use(middleware)
 
 app.get("/",(req,res)=>{
     res.json({
-        msg: `hello-manu`
+        msg: `hello-shivam`
     })
 })
 
 
-app.listen(3000)
+app.listen(3000) 
